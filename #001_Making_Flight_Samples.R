@@ -11,11 +11,11 @@ get_flights_sample <- function(sample_size){
   
 }
 
-sample_1000 <- get_flights_sample(1000)
-sample_10000 <- get_flights_sample(10000)
+sample_a <- get_flights_sample(12345)
+sample_b <- get_flights_sample(56789)
 
-write_csv(sample_1000, "data/flights_sample_1000.csv")
-write_csv(sample_10000, "data/flights_sample_10000.csv")
+write_csv(sample_a, "data/flights_sample_a.csv")
+write_csv(sample_b, "data/flights_sample_b.csv")
 write_csv(flights, "data/flights.csv")
 write_csv(airlines, "data/airlines.csv")
 write_csv(airports, "data/airports.csv")
